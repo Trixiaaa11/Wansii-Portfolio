@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0px;
+        }
+        #navbar ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+         background-color: #333333;
+        }
+        #navbar li
+        {
+            float: left;
+        }
+        #navbar li a:hover
+        {
+            background-color: pink;
+        }
+        #navbar a
+        {
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 16px;
+            text decoration: none;
+        }
+        header
+        {
+            background-color: rgb(245, 192, 255);
+            height: 100px;
+            text-align: center;
+        }
+        
+        nav
+        {
+            background-color: rgb(186, 183, 183);
+            height: 50px;
+        }
+        
+        main
+        {
+            background-color: pink;
+            height: auto;
+
+        }
+        
+        aside
+        {
+            background-color: white;
+            width: 20%;
+            float: left;
+            margin: 0px;
+            padding: 30px;
+        }
+
+        
+        section, article
+        {
+            background-color:white;
+            width: 40%;
+            float: left;
+            margin: 0px;
+            height: auto;
+            padding: 30px;
+        }
+         
+        footer
+        {
+            background-color: rgb(245, 192, 255);;
+            height: 100px;
+            clear: both;
+            text-align: center;
+
+        }
+        p
+        {
+            text-align: justify;
+        }
+        @media screen and (max-width: 600px)
+        {
+            aside, section, article
+        {
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header
+    id = "header">
+    <h1>Header</h1>
+</header>
+    <nav id = "navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+   </nav>
+     <Main id = "main">
+      <Aside id = "aside">
+        <h2>Aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus blanditiis aspernatur nesciunt nostrum eaque beatae fugit fuga, eligendi aut odit nobis eius amet rerum possimus. Quaerat sunt ullam quam.</p>
+        
+      </Aside>
+      <Section id = "section">
+        <h2>Section</h2>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quasi doloribus quis vero! Suscipit, perspiciatis? Asperiores neque excepturi ipsam, quasi quidem molestiae nemo dicta aliquam labore veniam corrupti praesentium et!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, deleniti dolorum maiores ipsum sint aut? Voluptas a fugit cumque maiores quisquam ullam expedita eveniet, est beatae ducimus autem, obcaecati magnam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum nisi eveniet, praesentium illo laborum totam iure aliquam qui voluptates quia repudiandae, hic inventore at enim esse optio perferendis architecto.</p>
+      </Section>
+      <Article id = "article">
+        <h2>Article</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem at distinctio facere nemo optio repellendus sequi doloremque sint magni. Quas et ipsa ipsam perspiciatis delectus nesciunt repellat magni beatae.</p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda eligendi porro amet aspernatur, cupiditate temporibus rem fugit quibusdam, eveniet repellendus earum! Sit dolores reiciendis earum dolore, eaque tempora ea natus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo doloribus natus beatae deleniti, commodi assumenda similique fuga, ullam quam vel, quo doloremque deserunt provident temporibus dicta. Sint, cum obcaecati.</p>
+      </Article>
+      
+    </Main>
+   <Footer id = "footer"><h1> This is a footer</h1></Footer>
+   <h1>👩‍💻Source of Code:</h1>
+   <img src="stylesheet1.png" width="800px">
+</body>
+</html>
