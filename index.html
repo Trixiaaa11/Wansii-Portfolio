@@ -12,174 +12,267 @@
             margin: 0;
             padding: 0;
             color: #333;
-        }.container {
+            scroll-behavior: smooth; 
+        }
+
+        
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        body.dark-mode .section {
+            background-color: #2a2a2a;
+            color: #f5f5f5;
+        }
+        body.dark-mode a {
+            color: #ff8c69;
+        }
+
+        .container {
             max-width: 900px;
             margin: auto;
             padding: 20px;
-        }.profile {
+        }
+        .profile {
             text-align: center;
-        }.profile img {
+        }
+        .profile img {
             border-radius: 50%;
             border: 2px solid #000;
-        }h1, h2, h3 {
+        }
+        h1, h2, h3 {
             color: #8b0000;
-        }hr {
+        }
+        hr {
             border: none;
             height: 1px;
             background-color: #ccc;
             margin: 25px 0;
-        }.section {
+        }
+        .section {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.08);
             margin-bottom: 20px;
-        }ul{
+        }
+        ul{
             line-height: 1.8;
-        }.icons img {
-            margin: 5px;
-        }.icons img:hover {
-            transform: scale(1.1);}
+        }
+        .icons img:hover {
+            transform: scale(1.1);
+        }
         .section img:hover{transform: scale(1.1);}
         .center {
             text-align: center;
         }
-        a
-        {
+        a {
             color: #4b0082;
             text-decoration: none;
         }
-        a:visited
-        {
+        a:visited {
             color:#4b0082;
         }
-        a:hover
-        {
+        a:hover {
             color: #ff4500;
             text-decoration: underline;
         }
+
+        
+        .header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f7f5f2;
+            position: fixed;
+            top: 0;
+            width: 98%;
+            z-index: 1000;
+        }
+        .header a {
+            margin-right: 20px;
+            color: #8b0000;
+
+        }
+        body.dark-mode .header {
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #444;
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 20px;
+            border: 1px solid #8b0000;
+            color: #8b0000;
+            background: none;
+        }
+        body.dark-mode .button {
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        .container {
+            padding-top: 100px;
+        }
+        
     </style>
 </head>
 
 <body>
+<div class="header">
+    <div><b>WS101 Portfolio</b></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="button" onclick="toggleMode()">🌙</button>
+    </div>
+</div>
+
 <div class="container">
 
-    <div class="profile">
-        <img src="1x1.jpg" width="120px" height="120px">
-        <p>
-            <b> Trixia Mae B. Miguel</b><br>
-            San Vicente, Concepcion Tarlac<br>
-            <a href="mailto:trishbuan903@gmail.com" target="_blank" style="text-decoration: none;"> 📧trishbuan903@gmail.com</a><br>
-            <a href="tel: +639276171416" target="_blank" style="text-decoration: none;"> 📞+639276171416</a>
-        </p>
-    </div>
+<div class="profile">
+    <img src="1x1.jpg" width="120px" height="120px">
+    <p>
+        <b> Trixia Mae B. Miguel</b><br>
+        San Vicente, Concepcion Tarlac<br>
+        <a href="mailto:trishbuan903@gmail.com" target="_blank"> 📧trishbuan903@gmail.com</a><br>
+        <a href="tel: +639276171416" target="_blank"> 📞+639276171416</a>
+    </p>
+</div>
 
-    <div class="section">
-        <p>
-            Welcome to my <b>WS101 Portfolio!</b> This Portfolio contains my activity/quizzes, showcasing my skills in organizing, managing, and handling data based on what I learned in our subject.
-        </p>
-    </div>
+<div class="section" id="about">
+    <p>
+        Welcome to my <b>WS101 Portfolio!</b> This Portfolio contains my activity/quizzes, showcasing my skills in organizing, managing, and handling data based on what I learned in our subject.
+    </p>
+</div>
 
-    <div class="section">
-        <h1>🎀 About Me</h1>
-        <p>
-            My name is Trixia, you can call me xia. I can say that I'm friendly and approachable. I enjoy drinking coffee with friends and family, also spending time with them. I'm a kind of person who loves to learn new things
-        </p>
-    </div>
+<div class="section">
+    <h1>🎀 About Me</h1>
+    <p>
+        My name is Trixia, you can call me xia. I can say that I'm friendly and approachable. I enjoy drinking coffee with friends and family, also spending time with them. I'm a kind of person who loves to learn new things
+    </p>
+</div>
 
-    <div class="section">
-        <h2>What I believe In:</h2>
-        <ul type="circle">
-            <li>You need to respect everyone, either living or non living things.</li>
-            <li>Hard work pays off.</li>
-            <li>Positive mindset.</li>
-        </ul>
-    </div>
+<div class="section">
+    <h2>What I believe In:</h2>
+    <ul type="circle">
+        <li>You need to respect everyone, either living or non living things.</li>
+        <li>Hard work pays off.</li>
+        <li>Positive mindset.</li>
+    </ul>
+</div>
 
-    <div class="section">
-        <h1>🎓 Education</h1>
-        <p>
-            <b>Elementary:</b> Damong Maliit Elementary School<br>
-            <b>Junior High School:</b> Dolores National High School<br>
-            <b>Senior High School:</b> Precious High Academy Concepcion Inc.
-        </p>
-    </div>
+<div class="section" id="education">
+    <h1>🎓 Education</h1>
+    <p>
+        <b>Elementary:</b> Damong Maliit Elementary School<br>
+        <b>Junior High School:</b> Dolores National High School<br>
+        <b>Senior High School:</b> Precious High Academy Concepcion Inc.
+    </p>
+</div>
 
-    <div class="section">
-        <h2>📜 Language I used before</h2>
-        <img src="python.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-        <img src="java.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-        <img src="html.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-    </div>
+<div class="section center">
+    <h2>📜 Language I used before</h2>
+    <img src="python.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+    <img src="java.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+    <img src="html.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+</div>
 
-    <div class="section">
-        <h2>💻 My Projects</h2>
+<div class="section" id="projects">
+    <h2>💻 My Projects</h2>
 
-        <h3>MIDTERM</h3>
-        <p>
-            <b>MIDTERM LAB TASK 1: 📁</b>
-            <a href="Resume.html" target="_blank" style="text-decoration: none;"> Resume</a><br>
-            <b>MIDTERM LAB TASK 2: 📁</b>
-            <a href="Exer2.html" target="_blank" style="text-decoration: none;"> Ordered and Unordered List</a><br>
-            <b>MIDTERM LAB TASK 3: 📁</b>
-            <a href="form.html" target="_blank" style="text-decoration: none;"> HTML Forms</a><br>
-            <b>MIDTERM LAB TASK 4: 📁</b>
-            <a href="map.html" target="_blank" style="text-decoration: none;"> Image Maps</a><br>
-            <b>MIDTERM LAB TASK 5: 📁</b>
-            <a href="res2.html" target="_blank" style="text-decoration: none;"> Applying CSS in your Resume</a><br>
-             <b>MIDTERM LAB TASK 6: 📁</b>
-            <a href="task6.html" target="_blank" style="text-decoration: none;"> CSS Display</a><br>
-             <b>MIDTERM LAB TASK 7: 📁</b>
-            <a href="Stylesheet1.html" target="_blank" style="text-decoration: none;"> No Style</a><br>
-             <b>MIDTERM LAB TASK 8: 📁</b>
-            <a href="Stylesheet2.html" target="_blank" style="text-decoration: none;"> Styelsheet</a><br>
-        </p>
+    <h3>MIDTERM</h3>
+    <p>
+        <b>MIDTERM LAB TASK 1: 📁</b>
+        <a href="Resume.html" target="_blank"> Resume</a><br>
 
-        <h3>FINALS</h3>
-        <p>
-            <b>FINAL LAB TASK 1: 📁</b><br>
-            <b>FINAL LAB TASK 2: 📁</b><br>
-            <b>FINAL LAB TASK 3: 📁</b><br>
-        </p>
-    </div>
+        <b>MIDTERM LAB TASK 2: 📁</b>
+        <a href="Exer2.html" target="_blank"> Ordered and Unordered List</a><br>
 
-    <div class="section">
-        <h2>❤️ I Love:</h2>
-        <ul>
-            <li>🎧 Listening to music while reviewing</li>
-            <li>☕️ Drinking coffee</li>
-            <li>🎮 Playing online games</li>
-        </ul>
-    </div>
+        <b>MIDTERM LAB TASK 3: 📁</b>
+        <a href="form.html" target="_blank"> HTML Forms</a><br>
+        <b>MIDTERM LAB TASK 4: 📁</b>
+        <a href="map.html" target="_blank"> Image Maps</a><br>
+        <b>MIDTERM LAB TASK 5: 📁</b>
+        <a href="res2.html" target="_blank"> Applying CSS in your Resume</a><br>
+        <b>MIDTERM LAB TASK 6: 📁</b>
+        <a href="task6.html" target="_blank"> CSS Display</a><br>
+        <b>MIDTERM LAB TASK 7: 📁</b>
+        <a href="Stylesheet1.html" target="_blank"> No Style</a><br>
+        <b>MIDTERM LAB TASK 8: 📁</b>
+        <a href="Stylesheet2.html" target="_blank"> Stylesheet</a><br>
+    </p>
 
-    <div class="section">
-        <h2>📌 Skills</h2>
-        <ul>
-            <li>⏰ Time management</li>
-            <li>🔍 Attention to detail</li>
-            <li>😴 Works well even with limited sleep</li>
-            <li>📋 Organization skills</li>
-        </ul>
-    </div>
+    <h3>FINALS</h3>
+    <p>
+        <b>FINAL LAB TASK 1: 📁</b><br>
+        <b>FINAL LAB TASK 2: 📁</b><br>
+        <b>FINAL LAB TASK 3: 📁</b><br>
+    </p>
+</div>
 
-    <div class="section center icons">
-        <h2>☎️ Click Below to Connect with Me!</h2>
+<div class="section">
+    <h2>❤️ I Love:</h2>
+    <ul>
+        <li>🎧 Listening to music while reviewing</li>
+        <li>☕️ Drinking coffee</li>
+        <li>🎮 Playing online games</li>
+    </ul>
+</div>
 
-        <a href="https://www.facebook.com/loveeyaahh" target="_blank">
-            <img src="fb.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-        </a>
+<div class="section">
+    <h2>📌 Skills</h2>
+    <ul>
+        <li>⏰ Time management</li>
+        <li>🔍 Attention to detail</li>
+        <li>😴 Works well even with limited sleep</li>
+        <li>📋 Organization skills</li>
+    </ul>
+</div>
 
-        <a href="https://www.instagram.com/trixxbuan/" target="_blank">
-            <img src="ig.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-        </a>
+<div class="section center icons" id="contact">
+    <h2>☎️ Click Below to Connect with Me!</h2>
 
-        <a href="mailto:trishbuan903@gmail.com" target="_blank">
-            <img src="gmail.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
-        </a>
-    </div>
+    <a href="https://www.facebook.com/loveeyaahh" target="_blank">
+        <img src="fb.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+    </a>
+
+    <a href="https://www.instagram.com/trixxbuan/" target="_blank">
+        <img src="ig.jpg"style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+    </a>
+
+    <a href="mailto:trishbuan903@gmail.com" target="_blank">
+        <img src="gmail.jpg" style="width: 5pc; height: 5pc; border: 2px solid black; border-radius: 8pc;">
+    </a>
+</div>
 
 </div>
-</body>
 
+<footer>
+    © 2026 Trixia Mae B. Miguel | All Rights Reserved
+</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
 </html>
+
 
